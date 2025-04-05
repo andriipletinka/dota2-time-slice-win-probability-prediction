@@ -1,0 +1,9 @@
+parser\ReplayParser$Team.class
+parser\ReplayParser$UnknownItemFoundException.class
+parser\ReplayParser.class
+parser\ReplayParser$Player.class
+parser\App.class
+parser\ReplayParser$Item.class
+parser\ReplayParser$UnknownAbilityFoundException.class
+parser\ReplayParser$Ability.class
+parser\ReplayParser$Building.class
