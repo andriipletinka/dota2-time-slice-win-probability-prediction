@@ -413,7 +413,8 @@ public class ReplayParser {
 
         Iterator<Entity> it = entities.getAllByPredicate(e -> {
             String dt = e.getDtClass().getDtName();
-            return dt.contains("Tower") || dt.contains("Barracks") || dt.contains("Fort");
+            return dt.startsWith("CDOTA_BaseNPC_") &&
+                    (dt.contains("Tower") || dt.contains("Barracks") || dt.contains("Fort"));
         });
 
         Set<String> currentBuildings = new HashSet<>();
@@ -708,7 +709,7 @@ public class ReplayParser {
 
     public static void main(String[] args) throws IOException {
         if (args.length < 2) {
-            System.err.println("Usage: java -jar parser.jar <replay.dem> <output.json>");
+            System.err.println("Usage: java -jar replay-parser-1.0.0.jar <replay.dem> <output.json>");
             return;
         }
         String replayPath = args[0];
