@@ -13,8 +13,8 @@ https://drive.google.com/drive/folders/1Gv8x3imC0x2kM4NMtilYuQ-Pi-2CuMqb?usp=sha
 
 ## Prerequisites
 
-| Tool | Version |
-|------|---------|
+| Tool |
+|------|
 | **Java 8 +** & **Maven** – builds the replay-parser (see `pom.xml`). |
 | **Python ≥ 3.10** |
 | **CUDA 12.6**-enabled GPU (optional, but the default `torch==2.6.0+cu126` wheels expect it) |
